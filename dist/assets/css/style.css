@@ -5,6 +5,50 @@
     margin-left: -3%;
 }
 
+/* navbar */
+.navbar-custom {
+	background: rgba(7, 122, 70,0.65);
+}
+.navbar-custom .topnav-menu .nav-link {
+	color: rgba(255, 255, 255, 1);
+}
+
+/* tab menu */
+#sidebar-menu .menuitem-active .active {
+    color: #077A46;
+	font-weight: 500;
+	border-left: 3px solid #077A46;
+	background: linear-gradient(160deg, rgba(7,120,70,0.15) 20%, rgba(7,120,70,0.05) 90%);
+}
+#sidebar-menu > ul > li{
+	transition: 0.5s all;
+}
+#sidebar-menu > ul > li > a {
+	color: rgba(7, 122, 70, 0.6);	
+}
+#sidebar-menu > ul > li > a:active, #sidebar-menu > ul > li > a:focus, #sidebar-menu > ul > li > a:hover {
+    color: rgba(7, 122, 70, 0.9);
+}
+#sidebar-menu > ul > li:hover{
+	background: linear-gradient(160deg, rgba(7,120,70,0.15) 20%, rgba(7,120,70,0.05) 90%);
+}
+
+#sidebar-menu > ul >li.menuitem-active:hover{
+	background: none;
+}
+body[data-sidebar-size="condensed"] .left-side-menu #sidebar-menu > ul > li:hover > a {
+	color:#077A46;
+	background: linear-gradient(100deg, rgba(7,120,70,0.15) 0%, #fff 50%);
+}
+
+/* header title */
+.page-title-box .page-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* info sppt */
 body.authentication-bg {
     background-color: rgba(50, 168, 82,.8);
     background-size: cover;
@@ -14,9 +58,6 @@ body.authentication-bg {
 .vertical-table{
     vertical-align: top;
 }
-
-
-
 .intro-text {
 	margin-bottom: 120px;
 	color: #98979E;
@@ -24,7 +65,6 @@ body.authentication-bg {
 	font-weight: 700;
 	line-height: 1.6;
 }
-
 .sign-section {
 	flex-basis: 30%;
 	color: #98979E;
@@ -52,36 +92,37 @@ body.authentication-bg {
 	cursor: pointer;
 	transition: .3s ease;
 }
-
 .sign-button:hover {
 	background-color: #67E878;
 	box-shadow: 0px 0px 5px 1px rgba(103,232,120,1);
 }
 
-.nav-tabs{
-    border-bottom: 0px;
-  }
   
-  .nav-tabs>li.active>a, 
-  .nav-tabs>li.active>a:focus, 
-  .nav-tabs>li.active>a:hover,
-  .nav-tabs>li>a,
-  .nav>li>a:focus, 
-  .nav>li>a:hover{
-    border: 0px;
-    color: black;
-    background-color: white;
-    line-height: 1.42857143;
-  }
 
 /* kode bayar */
-
-.line-code{
-	width: 100%;
-	height: 3px;
-	background-color: #1ABC9C;
+.nav-pills .nav-link.active{
+	background-color: rgba(7,120,70,0.8);
+}
+.tab-payment .nav > li > a:hover {
+    border: 0px;
+    color: black;
+	background-color:  rgba(7,120,70,0.3);
+}
+.tab-payment .nav > li > a.active:hover {
+	background-color: rgba(7,120,70,0.8);
+	color: #fff;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color:  rgba(7,120,70,1);
+    background-color: rgba(7,120,70,0.8);
 }
 
-.radio-method{
-	border-right: 3px solid green;
+/* tab */
+.nav-bordered a.active {
+    border-bottom: 2px solid #077A46!important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	color: rgba(7,120,70,0.9);
+	font-weight: 700;
 }
