@@ -56,7 +56,7 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
 }
 .step-box .outer-step.active .step {
-  background-color: #006203;
+  background-color: black;
   opacity: 1;
   color: #fff;
 }
@@ -88,7 +88,8 @@ body {
   font-weight: 700;
   font-size: 13px;
 }
-#regForm input{
+#regForm input[type=text],
+#regForm input[type=email]{
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 0px;
@@ -132,7 +133,7 @@ body {
   color: #ffffff;
   border: none;
   padding: 10px 20px;
-  font-size: 17px;
+  font-size: 15px;
   font-family: Montserrat;
   cursor: pointer;
   margin: 5px 10px;

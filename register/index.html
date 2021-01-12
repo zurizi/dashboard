@@ -43,11 +43,11 @@
                 </div>        
                 <div class="outer-step">
                     <span class="step">4</span>
-                    <p>Upload</p>
+                    <p>Persyaratan</p>
                 </div>  
                 <div class="outer-step">
                     <span class="step">5</span>
-                    <p>Konfirmasi</p>
+                    <p>Pernyataan</p>
                 </div>        
         
             </div>
@@ -208,12 +208,12 @@
                                 <h1 class="mb-3 text-left">Pemilik</h1>
                             </div>
                             <div class="form-group col-md-6 mb-3">
-                                <label for="pemilik-nik">NIK</label>
-                                <input type="text" id="pemilik-nik" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6 mb-3">
                                 <label for="pemilik-nama-lengkap">Nama Lengkap</label>
                                 <input type="text" id="pemilik-nama-lengkap" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6 mb-3">
+                                <label for="pemilik-nik">NIK</label>
+                                <input type="text" id="pemilik-nik" class="form-control">
                             </div>
                             <div class="form-group col-md-12 mb-3">
                                 <label for="pemilik-alamat">Alamat</label>
@@ -236,12 +236,12 @@
                                 <h1 class="mb-3 mt-4 text-left">pengelola</h1>
                             </div>
                             <div class="form-group col-md-6 mb-3">
-                                <label for="pengelola-nik">NIK</label>
-                                <input type="text" id="pengelola-nik" class="form-control">
-                            </div>
-                            <div class="form-group col-md-6 mb-3">
                                 <label for="pengelola-nama-lengkap">Nama Lengkap</label>
                                 <input type="text" id="pengelola-nama-lengkap" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6 mb-3">
+                                <label for="pengelola-nik">NIK</label>
+                                <input type="text" id="pengelola-nik" class="form-control">
                             </div>
                             <div class="form-group col-md-12 mb-3">
                                 <label for="pengelola-alamat">Alamat Lengkap</label>
@@ -272,16 +272,61 @@
                     </div>
 
                     <div class="tab col-md-12 col-xl-12">
-                        <label class="mb-1" for="name">Nama Lengkap : </label>
-                        <input class="mb-3" type="text" placeholder="Nama Lengkap" name="fname">
-                        <label class="mb-1" for="alamat">Alamat : </label>
-                        <input class="mb-3" type="text" placeholder="Alamat" name="lname">
+                        <h1 class="mb-3 text-left">Persyaratan</h1>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Untuk memproses permohonan pendaftaran NPWP diperlukan persyaratan yang harus dilampirkan. Metode yang digunakan dalam mengirim lampiram permohonannya adalah :  </p>
+                                <div class="upload-checkbox ml-3 mb-3">
+                                    <div class="checkbox checkbox-success checkbox-circle mb-2">
+                                        <input id="ugggah-ktp" type="checkbox">
+                                        <label for="ugggah-ktp">
+                                            Unggah (Jenis file image atau pdf, ukuran file max 2MB/file)
+                                        </label>
+                                    </div>
+                                    <div class="checkbox checkbox-success checkbox-circle mb-2">
+                                        <input id="kirim-manual" type="checkbox">
+                                        <label for="kirim-manual">
+                                            Kirim Manual
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <p>Saudara adalah Wajib Pajak Orang Pribadi bestatus PUSAT yang tidak melakuakan usaha/pekerjaan bebas dengan kategori OP. Silahkan upload syarat-syarat berikut! : </p>
+                                <div class="row mt-3 mb-2">
+                                    <div class="col-md-4">
+                                        <h4>FC KTP/eKTP</h4> 
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group ">
+                                            <input type="file" id="example-fileinput" class="form-control-file">
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+
+                        </div>
+
+
                     </div>
                     <div class="tab col-md-12 col-xl-12">
-                        <label class="mb-1" for="name">Nama Lengkap : </label>
-                        <input class="mb-3" type="text" placeholder="Nama Lengkap" name="fname">
-                        <label class="mb-1" for="alamat">Alamat : </label>
-                        <input class="mb-3" type="text" placeholder="Alamat" name="lname">
+                        <h1 class="mb-3 text-left">Pernyataan</h1>
+                        <p>Dengan menyadari sepenuhnya akan segala akibat termasuk sanksi sesuai dengan ketentuan perundang-undangan yang berlaku. saya melakukan bahwa apa yang telah saya beritahukan di atas adalah : </p>
+                            <div class="penyataan-checkbox ml-3 mb-3">
+                                <div class="checkbox checkbox-success checkbox-circle mb-2">
+                                    <input id="pernyataan-benar" type="checkbox">
+                                    <label for="pernyataan-benar">
+                                        Benar
+                                    </label>
+                                </div>
+                                <div class="checkbox checkbox-success checkbox-circle mb-2">
+                                    <input id="penyataan-lengkap" type="checkbox">
+                                    <label for="penyataan-lengkap">
+                                        Lengkap
+                                    </label>
+                                </div>
+                            </div>
+                        
                     </div>
                     
                     <div class="overflow-auto col-12">
