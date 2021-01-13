@@ -73,7 +73,60 @@ function fixStepIndicator(n) {
     let step = document.querySelectorAll(".outer-step");
     step.forEach( el => {
         if(el.classList.contains("finish") == true){
-            console.log(el.firstChild.nextSibling.innerHTML = "✔")
+            el.firstChild.nextSibling.innerHTML = "✔"    
         }
+
     } )
 }
+let outerStep = document.querySelectorAll(".outer-step")
+let bar = document.querySelector(".progress-bar");
+value = parseInt(bar.ariaValueMax) / outerStep.length
+valueStart = JSON.stringify(value)
+bar.ariaValueNow = valueStart;
+bar.style.width = valueStart + "%"
+
+valueBar = parseInt(bar.ariaValueNow)
+
+
+let prevBtn = document.getElementById("prevBtn")
+let nextBtn = document.getElementById("nextBtn")
+let rows = document.querySelectorAll(".tab .row")
+
+// nextBtn.addEventListener("click", function(){
+//   rows.forEach( row => {
+//     let ch = row.querySelectorAll("input")
+//     ch.forEach(el =>{
+//       valueBar += value;
+//       if(el.style.backgroundColor == "#ffdddd"){
+//         valueBar -= value;
+//       }
+//     })
+//   } )
+  
+//   strValue = JSON.stringify(valueBar)
+//   bar.ariaValueNow = strValue;
+//   bar.style.width = strValue + "%"
+// })
+
+
+nextBtn.addEventListener("click", function(){
+  valueBar += value;
+  strValue = JSON.stringify(valueBar)
+  bar.ariaValueNow = strValue;
+  bar.style.width = strValue + "%"
+})
+prevBtn.addEventListener("click", function(){
+  
+  valueBar -= value;
+  strValue = JSON.stringify(valueBar)
+  bar.ariaValueNow = strValue;
+  bar.style.width = strValue + "%"
+})
+
+
+
+
+
+
+
+
