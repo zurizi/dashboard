@@ -259,11 +259,10 @@ border: 2px #077A46 solid;
   
 /* end login */
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-
 #multistep-register .card{
   border: none!important;
   border-radius: 15px!important;
+  font-family: "Cerebri Sans,sans-serif"!important;
 }
 #multistep-register .header-title{
   text-transform: uppercase;
@@ -274,13 +273,12 @@ border: 2px #077A46 solid;
 }
 
 #multistep-register .form-wizard-header{
-  font-family: "Montserrat";
   font-weight: 700;
 }
 
 #multistep-register .step{
-  height: 24px;
-  width: 24px;
+  height: 20px;
+  width: 20px;
   background-color: #0072c9;
   color: #fff;
   display: flex;
@@ -288,32 +286,51 @@ border: 2px #077A46 solid;
   align-items: center;
   border-radius: 50%;
   margin-right: 7px;
-  font-size: .8rem;
+  font-size: .7rem;
   opacity: 1;
-  transition: 0.5s;
+  
 
 }
 #multistep-register .step-text{
-  padding: 0;
+  padding-bottom: 7px;
   font-size: .75rem;
+  
+}
+#multistep-register .step-chevron{
+  background-color: #f0f0f0;
+  width: 46px;
+  height: 46px;
+  border-right: 2px solid rgba(0,0,0,.075);
+  border-bottom: 2px solid rgba(0,0,0,.075);
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 5px;
+  right: -20px;
+  z-index: 999;
+  
+}
+#multistep-register .nav-link.active .step-chevron{
+  background-color: #0072c9;
 }
 #multistep-register .nav-link {
   display: block;
   padding: .5rem .5rem;
   justify-content: center;
-  align-items: baseline;
+  position: relative;
+  align-items: center;
+  height: 3.5rem;
+  background-color: #f0f0f0;
 }
+
 #multistep-register .nav-link.active .step{
   background-color: #fff;
   color:  #6c757d ;
-  transition: 0.5s;
+  
 }
-#multistep-register .nav-link.active{
-  transition: 0.5s;
-}
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: #fff;
-  background-color: #0072c9;
+  background-color: #0072c9 !important;
 }
 
 #multistep-register .progress-bar{
@@ -373,7 +390,6 @@ border: 2px #077A46 solid;
   border: none;
   padding: 10px 18px;
   font-size: 14px;
-  font-family: "Montserrat";
   cursor: pointer;
   margin: 5px 10px;
   border-radius: 25px;
@@ -395,4 +411,5 @@ border: 2px #077A46 solid;
   box-shadow: 0 0 0 2px white, 0 0 0 3px  #0072c9;
 }
   
+
 
