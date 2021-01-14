@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Starter | UBold - Responsive Admin Dashboard Template</title>
+        <title>Form Wizard | UBold - Responsive Admin Dashboard Template</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -11,18 +11,20 @@
         <link rel="shortcut icon" href="../assets/images/favicon.ico">
 
 		<!-- App css -->
-		<link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
-		<link href="../assets/css/app.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
+		<link href="../assets/css/bootstrap-creative.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
+		<link href="../assets/css/app-creative.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
 
-		<link href="../assets/css/bootstrap-dark.min.css" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" />
-		<link href="../assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" />
+		<link href="../assets/css/bootstrap-creative-dark.min.css" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" />
+		<link href="../assets/css/app-creative-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" />
 
 		<!-- icons -->
-		<link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        
+        <link rel="stylesheet" href="../assets/css/style.css">
 
     </head>
 
-    <body class="loading">
+    <body class="loading" data-layout-mode="horizontal" data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "topbar": {"color": "dark"}, "showRightSidebarOnPageLoad": true}'>
 
         <!-- Begin page -->
         <div id="wrapper">
@@ -534,813 +536,726 @@
             </div>
             <!-- end Topbar -->
 
-            <!-- ========== Left Sidebar Start ========== -->
-            <div class="left-side-menu">
+            <div class="topnav shadow-lg">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
 
-                <div class="h-100" data-simplebar>
+                        <div class="collapse navbar-collapse" id="topnav-menu-content">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-dashboard" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fe-airplay mr-1"></i> Dashboards <div class="arrow-down"></div>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="topnav-dashboard">
+                                        <a href="index.html" class="dropdown-item">Dashboard 1</a>
+                                        <a href="dashboard-2.html" class="dropdown-item">Dashboard 2</a>
+                                        <a href="dashboard-3.html" class="dropdown-item">Dashboard 3</a>
+                                        <a href="dashboard-4.html" class="dropdown-item">Dashboard 4</a>
+                                    </div>
+                                </li>
 
-                    <!-- User box -->
-                    <div class="user-box text-center">
-                        <img src="../assets/images/users/user-1.jpg" alt="user-img" title="Mat Helme"
-                            class="rounded-circle avatar-md">
-                        <div class="dropdown">
-                            <a href="javascript: void(0);" class="text-dark dropdown-toggle h5 mt-2 mb-1 d-block"
-                                data-toggle="dropdown">Geneva Kennedy</a>
-                            <div class="dropdown-menu user-pro-dropdown">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-apps" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fe-grid mr-1"></i> Apps <div class="arrow-down"></div>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="topnav-apps">
 
-                                <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <i class="fe-user mr-1"></i>
-                                    <span>My Account</span>
-                                </a>
-
-                                <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <i class="fe-settings mr-1"></i>
-                                    <span>Settings</span>
-                                </a>
-
-                                <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <i class="fe-lock mr-1"></i>
-                                    <span>Lock Screen</span>
-                                </a>
-
-                                <!-- item-->
-                                <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                    <i class="fe-log-out mr-1"></i>
-                                    <span>Logout</span>
-                                </a>
-
-                            </div>
-                        </div>
-                        <p class="text-muted">Admin Head</p>
-                    </div>
-
-                    <!--- Sidemenu -->
-                    <div id="sidebar-menu">
-
-                        <ul id="side-menu">
-
-                            <li class="menu-title">Navigation</li>
-                
-                            <li>
-                                <a href="#sidebarDashboards" data-toggle="collapse">
-                                    <i data-feather="airplay"></i>
-                                    <span class="badge badge-success badge-pill float-right">4</span>
-                                    <span> Dashboards </span>
-                                </a>
-                                <div class="collapse" id="sidebarDashboards">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="index.html">Dashboard 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="dashboard-2.html">Dashboard 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="dashboard-3.html">Dashboard 3</a>
-                                        </li>
-                                        <li>
-                                            <a href="dashboard-4.html">Dashboard 4</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="menu-title mt-2">Apps</li>
-
-                            <li>
-                                <a href="apps-calendar.html">
-                                    <i data-feather="calendar"></i>
-                                    <span> Calendar </span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="apps-chat.html">
-                                    <i data-feather="message-square"></i>
-                                    <span> Chat </span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarEcommerce" data-toggle="collapse">
-                                    <i data-feather="shopping-cart"></i>
-                                    <span> Ecommerce </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarEcommerce">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="ecommerce-dashboard.html">Dashboard</a>
-                                        </li>
-                                        <li>
-                                            <a href="ecommerce-products.html">Products</a>
-                                        </li>
-                                        <li>
-                                            <a href="ecommerce-product-detail.html">Product Detail</a>
-                                        </li>
-                                        <li>
-                                            <a href="ecommerce-product-edit.html">Add Product</a>
-                                        </li>
-                                        <li>
-                                            <a href="ecommerce-customers.html">Customers</a>
-                                        </li>
-                                        <li>
-                                            <a href="ecommerce-orders.html">Orders</a>
-                                        </li>
-                                        <li>
-                                            <a href="ecommerce-order-detail.html">Order Detail</a>
-                                        </li>
-                                        <li>
-                                            <a href="ecommerce-sellers.html">Sellers</a>
-                                        </li>
-                                        <li>
-                                            <a href="ecommerce-cart.html">Shopping Cart</a>
-                                        </li>
-                                        <li>
-                                            <a href="ecommerce-checkout.html">Checkout</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarCrm" data-toggle="collapse">
-                                    <i data-feather="users"></i>
-                                    <span> CRM </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarCrm">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="crm-dashboard.html">Dashboard</a>
-                                        </li>
-                                        <li>
-                                            <a href="crm-contacts.html">Contacts</a>
-                                        </li>
-                                        <li>
-                                            <a href="crm-opportunities.html">Opportunities</a>
-                                        </li>
-                                        <li>
-                                            <a href="crm-leads.html">Leads</a>
-                                        </li>
-                                        <li>
-                                            <a href="crm-customers.html">Customers</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarEmail" data-toggle="collapse">
-                                    <i data-feather="mail"></i>
-                                    <span> Email </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarEmail">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="email-inbox.html">Inbox</a>
-                                        </li>
-                                        <li>
-                                            <a href="email-read.html">Read Email</a>
-                                        </li>
-                                        <li>
-                                            <a href="email-compose.html">Compose Email</a>
-                                        </li>
-                                        <li>
-                                            <a href="email-templates.html">Email Templates</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="apps-social-feed.html">
-                                    <span class="badge badge-pink float-right">Hot</span>
-                                    <i data-feather="rss"></i>
-                                    <span> Social Feed </span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="apps-companies.html">
-                                    <i data-feather="activity"></i>
-                                    <span> Companies </span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarProjects" data-toggle="collapse">
-                                    <i data-feather="briefcase"></i>
-                                    <span> Projects </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarProjects">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="project-list.html">List</a>
-                                        </li>
-                                        <li>
-                                            <a href="project-detail.html">Detail</a>
-                                        </li>
-                                        <li>
-                                            <a href="project-create.html">Create Project</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarTasks" data-toggle="collapse">
-                                    <i data-feather="clipboard"></i>
-                                    <span> Tasks </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarTasks">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="task-list.html">List</a>
-                                        </li>
-                                        <li>
-                                            <a href="task-details.html">Details</a>
-                                        </li>
-                                        <li>
-                                            <a href="task-kanban-board.html">Kanban Board</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarContacts" data-toggle="collapse">
-                                    <i data-feather="book"></i>
-                                    <span> Contacts </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarContacts">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="contacts-list.html">Members List</a>
-                                        </li>
-                                        <li>
-                                            <a href="contacts-profile.html">Profile</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarTickets" data-toggle="collapse">
-                                    <i data-feather="aperture"></i>
-                                    <span> Tickets </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarTickets">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="tickets-list.html">List</a>
-                                        </li>
-                                        <li>
-                                            <a href="tickets-detail.html">Detail</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="apps-file-manager.html">
-                                    <i data-feather="folder-plus"></i>
-                                    <span> File Manager </span>
-                                </a>
-                            </li>
-
-                            <li class="menu-title mt-2">Custom</li>
-
-                            <li>
-                                <a href="#sidebarAuth" data-toggle="collapse">
-                                    <i data-feather="file-text"></i>
-                                    <span> Auth Pages </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarAuth">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="auth-login.html">Log In</a>
-                                        </li>
-                                        <li>
-                                            <a href="auth-login-2.html">Log In 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="auth-register.html">Register</a>
-                                        </li>
-                                        <li>
-                                            <a href="auth-register-2.html">Register 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="auth-signin-signup.html">Signin - Signup</a>
-                                        </li>
-                                        <li>
-                                            <a href="auth-signin-signup-2.html">Signin - Signup 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="auth-recoverpw.html">Recover Password</a>
-                                        </li>
-                                        <li>
-                                            <a href="auth-recoverpw-2.html">Recover Password 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="auth-lock-screen.html">Lock Screen</a>
-                                        </li>
-                                        <li>
-                                            <a href="auth-lock-screen-2.html">Lock Screen 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="auth-logout.html">Logout</a>
-                                        </li>
-                                        <li>
-                                            <a href="auth-logout-2.html">Logout 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="auth-confirm-mail.html">Confirm Mail</a>
-                                        </li>
-                                        <li>
-                                            <a href="auth-confirm-mail-2.html">Confirm Mail 2</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarExpages" data-toggle="collapse">
-                                    <i data-feather="package"></i>
-                                    <span> Extra Pages </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarExpages">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="pages-starter.html">Starter</a>
-                                        </li>
-                                        <li>
-                                            <a href="pages-timeline.html">Timeline</a>
-                                        </li>
-                                        <li>
-                                            <a href="pages-sitemap.html">Sitemap</a>
-                                        </li>
-                                        <li>
-                                            <a href="pages-invoice.html">Invoice</a>
-                                        </li>
-                                        <li>
-                                            <a href="pages-faqs.html">FAQs</a>
-                                        </li>
-                                        <li>
-                                            <a href="pages-search-results.html">Search Results</a>
-                                        </li>
-                                        <li>
-                                            <a href="pages-pricing.html">Pricing</a>
-                                        </li>
-                                        <li>
-                                            <a href="pages-maintenance.html">Maintenance</a>
-                                        </li>
-                                        <li>
-                                            <a href="pages-coming-soon.html">Coming Soon</a>
-                                        </li>
-                                        <li>
-                                            <a href="pages-gallery.html">Gallery</a>
-                                        </li>
-                                        <li>
-                                            <a href="pages-404.html">Error 404</a>
-                                        </li>
-                                        <li>
-                                            <a href="pages-404-two.html">Error 404 Two</a>
-                                        </li>
-                                        <li>
-                                            <a href="pages-404-alt.html">Error 404-alt</a>
-                                        </li>
-                                        <li>
-                                            <a href="pages-500.html">Error 500</a>
-                                        </li>
-                                        <li>
-                                            <a href="pages-500-two.html">Error 500 Two</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarLayouts" data-toggle="collapse">
-                                    <i data-feather="layout"></i>
-                                    <span class="badge badge-blue float-right">New</span>
-                                    <span> Layouts </span>
-                                </a>
-                                <div class="collapse" id="sidebarLayouts">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="layouts-horizontal.html">Horizontal</a>
-                                        </li>
-                                        <li>
-                                            <a href="layouts-detached.html">Detached</a>
-                                        </li>
-                                        <li>
-                                            <a href="layouts-two-column.html">Two Column Menu</a>
-                                        </li>
-                                        <li>
-                                            <a href="layouts-two-tone-icons.html">Two Tones Icons</a>
-                                        </li>
-                                        <li>
-                                            <a href="layouts-preloader.html">Preloader</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li class="menu-title mt-2">Components</li>
-
-                            <li>
-                                <a href="#sidebarBaseui" data-toggle="collapse">
-                                    <i data-feather="pocket"></i>
-                                    <span> Base UI </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarBaseui">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="ui-buttons.html">Buttons</a>
-                                        </li>
-                                        <li>
-                                            <a href="ui-cards.html">Cards</a>
-                                        </li>
-                                        <li>
-                                            <a href="ui-avatars.html">Avatars</a>
-                                        </li>
-                                        <li>
-                                            <a href="ui-portlets.html">Portlets</a>
-                                        </li>
-                                        <li>
-                                            <a href="ui-tabs-accordions.html">Tabs & Accordions</a>
-                                        </li>
-                                        <li>
-                                            <a href="ui-modals.html">Modals</a>
-                                        </li>
-                                        <li>
-                                            <a href="ui-progress.html">Progress</a>
-                                        </li>
-                                        <li>
-                                            <a href="ui-notifications.html">Notifications</a>
-                                        </li>
-                                        <li>
-                                            <a href="ui-spinners.html">Spinners</a>
-                                        </li>
-                                        <li>
-                                            <a href="ui-images.html">Images</a>
-                                        </li>
-                                        <li>
-                                            <a href="ui-carousel.html">Carousel</a>
-                                        </li>
-                                        <li>
-                                            <a href="ui-list-group.html">List Group</a>
-                                        </li>
-                                        <li>
-                                            <a href="ui-video.html">Embed Video</a>
-                                        </li>
-                                        <li>
-                                            <a href="ui-dropdowns.html">Dropdowns</a>
-                                        </li>
-                                        <li>
-                                            <a href="ui-ribbons.html">Ribbons</a>
-                                        </li>
-                                        <li>
-                                            <a href="ui-tooltips-popovers.html">Tooltips & Popovers</a>
-                                        </li>
-                                        <li>
-                                            <a href="ui-general.html">General UI</a>
-                                        </li>
-                                        <li>
-                                            <a href="ui-typography.html">Typography</a>
-                                        </li>
-                                        <li>
-                                            <a href="ui-grid.html">Grid</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarExtendedui" data-toggle="collapse">
-                                    <i data-feather="layers"></i>
-                                    <span class="badge badge-info float-right">Hot</span>
-                                    <span> Extended UI </span>
-                                </a>
-                                <div class="collapse" id="sidebarExtendedui">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="extended-nestable.html">Nestable List</a>
-                                        </li>
-                                        <li>
-                                            <a href="extended-range-slider.html">Range Slider</a>
-                                        </li>
-                                        <li>
-                                            <a href="extended-dragula.html">Dragula</a>
-                                        </li>
-                                        <li>
-                                            <a href="extended-animation.html">Animation</a>
-                                        </li>
-                                        <li>
-                                            <a href="extended-sweet-alert.html">Sweet Alert</a>
-                                        </li>
-                                        <li>
-                                            <a href="extended-tour.html">Tour Page</a>
-                                        </li>
-                                        <li>
-                                            <a href="extended-scrollspy.html">Scrollspy</a>
-                                        </li>
-                                        <li>
-                                            <a href="extended-loading-buttons.html">Loading Buttons</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="widgets.html">
-                                    <i data-feather="gift"></i>
-                                    <span> Widgets </span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarIcons" data-toggle="collapse">
-                                    <i data-feather="cpu"></i>
-                                    <span> Icons </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarIcons">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="icons-two-tone.html">Two Tone Icons</a>
-                                        </li>
-                                        <li>
-                                            <a href="icons-feather.html">Feather Icons</a>
-                                        </li>
-                                        <li>
-                                            <a href="icons-mdi.html">Material Design Icons</a>
-                                        </li>
-                                        <li>
-                                            <a href="icons-dripicons.html">Dripicons</a>
-                                        </li>
-                                        <li>
-                                            <a href="icons-font-awesome.html">Font Awesome 5</a>
-                                        </li>
-                                        <li>
-                                            <a href="icons-themify.html">Themify</a>
-                                        </li>
-                                        <li>
-                                            <a href="icons-simple-line.html">Simple Line</a>
-                                        </li>
-                                        <li>
-                                            <a href="icons-weather.html">Weather</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarForms" data-toggle="collapse">
-                                    <i data-feather="bookmark"></i>
-                                    <span> Forms </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarForms">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="forms-elements.html">General Elements</a>
-                                        </li>
-                                        <li>
-                                            <a href="forms-advanced.html">Advanced</a>
-                                        </li>
-                                        <li>
-                                            <a href="forms-validation.html">Validation</a>
-                                        </li>
-                                        <li>
-                                            <a href="forms-pickers.html">Pickers</a>
-                                        </li>
-                                        <li>
-                                            <a href="forms-wizard.html">Wizard</a>
-                                        </li>
-                                        <li>
-                                            <a href="forms-masks.html">Masks</a>
-                                        </li>
-                                        <li>
-                                            <a href="forms-summernote.html">Summernote</a>
-                                        </li>
-                                        <li>
-                                            <a href="forms-quilljs.html">Quilljs Editor</a>
-                                        </li>
-                                        <li>
-                                            <a href="forms-file-uploads.html">File Uploads</a>
-                                        </li>
-                                        <li>
-                                            <a href="forms-x-editable.html">X Editable</a>
-                                        </li>
-                                        <li>
-                                            <a href="forms-image-crop.html">Image Crop</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarTables" data-toggle="collapse">
-                                    <i data-feather="grid"></i>
-                                    <span> Tables </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarTables">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="tables-basic.html">Basic Tables</a>
-                                        </li>
-                                        <li>
-                                            <a href="tables-datatables.html">Data Tables</a>
-                                        </li>
-                                        <li>
-                                            <a href="tables-editable.html">Editable Tables</a>
-                                        </li>
-                                        <li>
-                                            <a href="tables-responsive.html">Responsive Tables</a>
-                                        </li>
-                                        <li>
-                                            <a href="tables-footables.html">FooTable</a>
-                                        </li>
-                                        <li>
-                                            <a href="tables-bootstrap.html">Bootstrap Tables</a>
-                                        </li>
-                                        <li>
-                                            <a href="tables-tablesaw.html">Tablesaw Tables</a>
-                                        </li>
-                                        <li>
-                                            <a href="tables-jsgrid.html">JsGrid Tables</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarCharts" data-toggle="collapse">
-                                    <i data-feather="bar-chart-2"></i>
-                                    <span> Charts </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarCharts">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="charts-apex.html">Apex Charts</a>
-                                        </li>
-                                        <li>
-                                            <a href="charts-flot.html">Flot Charts</a>
-                                        </li>
-                                        <li>
-                                            <a href="charts-morris.html">Morris Charts</a>
-                                        </li>
-                                        <li>
-                                            <a href="charts-chartjs.html">Chartjs Charts</a>
-                                        </li>
-                                        <li>
-                                            <a href="charts-peity.html">Peity Charts</a>
-                                        </li>
-                                        <li>
-                                            <a href="charts-chartist.html">Chartist Charts</a>
-                                        </li>
-                                        <li>
-                                            <a href="charts-c3.html">C3 Charts</a>
-                                        </li>
-                                        <li>
-                                            <a href="charts-sparklines.html">Sparklines Charts</a>
-                                        </li>
-                                        <li>
-                                            <a href="charts-knob.html">Jquery Knob Charts</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarMaps" data-toggle="collapse">
-                                    <i data-feather="map"></i>
-                                    <span> Maps </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarMaps">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="maps-google.html">Google Maps</a>
-                                        </li>
-                                        <li>
-                                            <a href="maps-vector.html">Vector Maps</a>
-                                        </li>
-                                        <li>
-                                            <a href="maps-mapael.html">Mapael Maps</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-
-                            <li>
-                                <a href="#sidebarMultilevel" data-toggle="collapse">
-                                    <i data-feather="share-2"></i>
-                                    <span> Multi Level </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <div class="collapse" id="sidebarMultilevel">
-                                    <ul class="nav-second-level">
-                                        <li>
-                                            <a href="#sidebarMultilevel2" data-toggle="collapse">
-                                                Second Level <span class="menu-arrow"></span>
+                                        <a href="apps-calendar.html" class="dropdown-item"><i class="fe-calendar mr-1"></i> Calendar</a>
+                                        <a href="apps-chat.html" class="dropdown-item"><i class="fe-message-square mr-1"></i> Chat</a>
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-ecommerce"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe-shopping-cart mr-1"></i> Ecommerce <div class="arrow-down"></div>
                                             </a>
-                                            <div class="collapse" id="sidebarMultilevel2">
-                                                <ul class="nav-second-level">
-                                                    <li>
-                                                        <a href="javascript: void(0);">Item 1</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="javascript: void(0);">Item 2</a>
-                                                    </li>
-                                                </ul>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-ecommerce">
+                                                <a href="ecommerce-dashboard.html" class="dropdown-item">Dashboard</a>
+                                                <a href="ecommerce-products.html" class="dropdown-item">Products</a>
+                                                <a href="ecommerce-product-detail.html" class="dropdown-item">Product Detail</a>
+                                                <a href="ecommerce-product-edit.html" class="dropdown-item">Add Product</a>
+                                                <a href="ecommerce-customers.html" class="dropdown-item">Customers</a>
+                                                <a href="ecommerce-orders.html" class="dropdown-item">Orders</a>
+                                                <a href="ecommerce-order-detail.html" class="dropdown-item">Order Detail</a>
+                                                <a href="ecommerce-sellers.html" class="dropdown-item">Sellers</a>
+                                                <a href="ecommerce-cart.html" class="dropdown-item">Shopping Cart</a>
+                                                <a href="ecommerce-checkout.html" class="dropdown-item">Checkout</a>
                                             </div>
-                                        </li>
-
-                                        <li>
-                                            <a href="#sidebarMultilevel3" data-toggle="collapse">
-                                                Third Level <span class="menu-arrow"></span>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-email"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe-mail mr-1"></i> Email <div class="arrow-down"></div>
                                             </a>
-                                            <div class="collapse" id="sidebarMultilevel3">
-                                                <ul class="nav-second-level">
-                                                    <li>
-                                                        <a href="javascript: void(0);">Item 1</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#sidebarMultilevel4" data-toggle="collapse">
-                                                            Item 2 <span class="menu-arrow"></span>
-                                                        </a>
-                                                        <div class="collapse" id="sidebarMultilevel4">
-                                                            <ul class="nav-second-level">
-                                                                <li>
-                                                                    <a href="javascript: void(0);">Item 1</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="javascript: void(0);">Item 2</a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </li>
-                                                </ul>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-email">
+                                                <a href="email-inbox.html" class="dropdown-item">Inbox</a>
+                                                <a href="email-read.html" class="dropdown-item">Read Email</a>
+                                                <a href="email-compose.html" class="dropdown-item">Compose Email</a>
+                                                <a href="email-templates.html" class="dropdown-item">Email Templates</a>
                                             </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
+                                        </div>
 
-                    </div>
-                    <!-- End Sidebar -->
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-crm"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe-users mr-1"></i> CRM <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-crm">
+                                                <a href="crm-dashboard.html" class="dropdown-item">Dashboard</a>
+                                                <a href="crm-contacts.html" class="dropdown-item">Contacts</a>
+                                                <a href="crm-opportunities.html" class="dropdown-item">Opportunities</a>
+                                                <a href="crm-leads.html" class="dropdown-item">Leads</a>
+                                                <a href="crm-customers.html" class="dropdown-item">Customers</a>
+                                            </div>
+                                        </div>
 
-                    <div class="clearfix"></div>
+                                        <a href="apps-social-feed.html" class="dropdown-item"><i class="fe-rss mr-1"></i> Social Feed</a>
+                                        <a href="apps-companies.html" class="dropdown-item"><i class="fe-activity mr-1"></i> Companies</a>
 
-                </div>
-                <!-- Sidebar -left -->
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-project"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe-briefcase mr-1"></i> Projects <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-project">
+                                                <a href="project-list.html" class="dropdown-item">List</a>
+                                                <a href="project-detail.html" class="dropdown-item">Detail</a>
+                                                <a href="project-create.html" class="dropdown-item">Create Project</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-task"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe-clipboard mr-1"></i> Tasks <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-task">
+                                                <a href="task-list.html" class="dropdown-item">List</a>
+                                                <a href="task-details.html" class="dropdown-item">Details</a>
+                                                <a href="task-kanban-board.html" class="dropdown-item">Kanban Board</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-contact"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe-book mr-1"></i> Contacts <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-contact">
+                                                <a href="contacts-list.html" class="dropdown-item">Members List</a>
+                                                <a href="contacts-profile.html" class="dropdown-item">Profile</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-tickets"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe-aperture mr-1"></i> Tickets <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-tickets">
+                                                <a href="tickets-list.html" class="dropdown-item">List</a>
+                                                <a href="tickets-detail.html" class="dropdown-item">Detail</a>
+                                            </div>
+                                        </div>
+                                        <a href="apps-file-manager.html" class="dropdown-item"><i class="fe-folder-plus mr-1"></i> File Manager</a>
+                                    </div>
+                                </li>
 
-            </div>
-            <!-- Left Sidebar End -->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-ui" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fe-briefcase mr-1"></i> UI Elements <div class="arrow-down"></div>
+                                    </a>
+
+                                    <div class="dropdown-menu mega-dropdown-menu dropdown-mega-menu-xl" aria-labelledby="topnav-ui">
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div>
+                                                    <a href="ui-buttons.html" class="dropdown-item">Buttons</a>
+                                                    <a href="ui-cards.html" class="dropdown-item">Cards</a>
+                                                    <a href="ui-avatars.html" class="dropdown-item">Avatars</a>
+                                                    <a href="ui-portlets.html" class="dropdown-item">Portlets</a>
+                                                    <a href="ui-tabs-accordions.html" class="dropdown-item">Tabs & Accordions</a>
+                                                    <a href="ui-modals.html" class="dropdown-item">Modals</a>
+                                                    <a href="ui-progress.html" class="dropdown-item">Progress</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div>
+                                                    <a href="ui-notifications.html" class="dropdown-item">Notifications</a>
+                                                    <a href="ui-spinners.html" class="dropdown-item">Spinners</a>
+                                                    <a href="ui-images.html" class="dropdown-item">Images</a>
+                                                    <a href="ui-carousel.html" class="dropdown-item">Carousel</a>
+                                                    <a href="ui-list-group.html" class="dropdown-item">List Group</a>
+                                                    <a href="ui-video.html" class="dropdown-item">Embed Video</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div>
+                                                    <a href="ui-dropdowns.html" class="dropdown-item">Dropdowns</a>
+                                                    <a href="ui-ribbons.html" class="dropdown-item">Ribbons</a>
+                                                    <a href="ui-tooltips-popovers.html" class="dropdown-item">Tooltips & Popovers</a>
+                                                    <a href="ui-general.html" class="dropdown-item">General UI</a>
+                                                    <a href="ui-typography.html" class="dropdown-item">Typography</a>
+                                                    <a href="ui-grid.html" class="dropdown-item">Grid</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-components" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fe-layers mr-1"></i> Components <div class="arrow-down"></div>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="topnav-components">
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-extendedui"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe-pocket mr-1"></i> Extended UI <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-extendedui">
+                                                <a href="extended-nestable.html" class="dropdown-item">Nestable List</a>
+                                                <a href="extended-range-slider.html" class="dropdown-item">Range Slider</a>
+                                                <a href="extended-dragula.html" class="dropdown-item">Dragula</a>
+                                                <a href="extended-animation.html" class="dropdown-item">Animation</a>
+                                                <a href="extended-sweet-alert.html" class="dropdown-item">Sweet Alert</a>
+                                                <a href="extended-tour.html" class="dropdown-item">Tour Page</a>
+                                                <a href="extended-scrollspy.html" class="dropdown-item">Scrollspy</a>
+                                                <a href="extended-loading-buttons.html" class="dropdown-item">Loading Buttons</a>
+                                            </div>
+                                        </div>
+                                        <a href="widgets.html" class="dropdown-item"><i class="fe-gift mr-1"></i> Widgets</a>
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-form"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe-bookmark mr-1"></i> Forms <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-form">
+                                                <a href="forms-elements.html" class="dropdown-item">General Elements</a>
+                                                <a href="forms-advanced.html" class="dropdown-item">Advanced</a>
+                                                <a href="forms-validation.html" class="dropdown-item">Validation</a>
+                                                <a href="forms-pickers.html" class="dropdown-item">Pickers</a>
+                                                <a href="forms-wizard.html" class="dropdown-item">Wizard</a>
+                                                <a href="forms-masks.html" class="dropdown-item">Masks</a>
+                                                <a href="forms-summernote.html" class="dropdown-item">Summernote</a>
+                                                <a href="forms-quilljs.html" class="dropdown-item">Quilljs Editor</a>
+                                                <a href="forms-file-uploads.html" class="dropdown-item">File Uploads</a>
+                                                <a href="forms-x-editable.html" class="dropdown-item">X Editable</a>
+                                                <a href="forms-image-crop.html" class="dropdown-item">Image Crop</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-charts"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe-bar-chart-2 mr-1"></i> Charts <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-charts">
+                                                <a href="charts-apex.html" class="dropdown-item">Apex Charts</a>
+                                                <a href="charts-flot.html" class="dropdown-item">Flot Charts</a>
+                                                <a href="charts-morris.html" class="dropdown-item">Morris Charts</a>
+                                                <a href="charts-chartjs.html" class="dropdown-item">Chartjs Charts</a>
+                                                <a href="charts-peity.html" class="dropdown-item">Peity Charts</a>
+                                                <a href="charts-chartist.html" class="dropdown-item">Chartist Charts</a>
+                                                <a href="charts-c3.html" class="dropdown-item">C3 Charts</a>
+                                                <a href="charts-sparklines.html" class="dropdown-item">Sparklines Charts</a>
+                                                <a href="charts-knob.html" class="dropdown-item">Jquery Knob Charts</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-table"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe-grid mr-1"></i> Tables <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-table">
+                                                <a href="tables-basic.html" class="dropdown-item">Basic Tables</a>
+                                                <a href="tables-datatables.html" class="dropdown-item">Data Tables</a>
+                                                <a href="tables-editable.html" class="dropdown-item">Editable Tables</a>
+                                                <a href="tables-responsive.html" class="dropdown-item">Responsive Tables</a>
+                                                <a href="tables-footables.html" class="dropdown-item">FooTable</a>
+                                                <a href="tables-bootstrap.html" class="dropdown-item">Bootstrap Tables</a>
+                                                <a href="tables-tablesaw.html" class="dropdown-item">Tablesaw Tables</a>
+                                                <a href="tables-jsgrid.html" class="dropdown-item">JsGrid Tables</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-icons"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe-cpu mr-1"></i> Icons <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-icons">
+                                                <a href="icons-two-tone.html" class="dropdown-item">Two Tone Icons</a>
+                                                <a href="icons-feather.html" class="dropdown-item">Feather Icons</a>
+                                                <a href="icons-mdi.html" class="dropdown-item">Material Design Icons</a>
+                                                <a href="icons-dripicons.html" class="dropdown-item">Dripicons</a>
+                                                <a href="icons-font-awesome.html" class="dropdown-item">Font Awesome 5</a>
+                                                <a href="icons-themify.html" class="dropdown-item">Themify</a>
+                                                <a href="icons-simple-line.html" class="dropdown-item">Simple Line</a>
+                                                <a href="icons-weather.html" class="dropdown-item">Weather</a>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-map"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe-map mr-1"></i> Maps <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-map">
+                                                <a href="maps-google.html" class="dropdown-item">Google Maps</a>
+                                                <a href="maps-vector.html" class="dropdown-item">Vector Maps</a>
+                                                <a href="maps-mapael.html" class="dropdown-item">Mapael Maps</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-pages" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fe-package mr-1"></i> Pages <div class="arrow-down"></div>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="topnav-pages">
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-auth"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Auth Style 1 <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-auth">
+                                                <a href="auth-login.html" class="dropdown-item">Log In</a>
+                                                <a href="auth-register.html" class="dropdown-item">Register</a>
+                                                <a href="auth-signin-signup.html" class="dropdown-item">Signin - Signup</a>
+                                                <a href="auth-recoverpw.html" class="dropdown-item">Recover Password</a>
+                                                <a href="auth-lock-screen.html" class="dropdown-item">Lock Screen</a>
+                                                <a href="auth-logout.html" class="dropdown-item">Logout</a>
+                                                <a href="auth-confirm-mail.html" class="dropdown-item">Confirm Mail</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-auth2"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Auth Style 2 <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-auth2">
+                                                <a href="auth-login-2.html" class="dropdown-item">Log In 2</a>
+                                                <a href="auth-register-2.html" class="dropdown-item">Register 2</a>
+                                                <a href="auth-signin-signup-2.html" class="dropdown-item">Signin - Signup 2</a>
+                                                <a href="auth-recoverpw-2.html" class="dropdown-item">Recover Password 2</a>
+                                                <a href="auth-lock-screen-2.html" class="dropdown-item">Lock Screen 2</a>
+                                                <a href="auth-logout-2.html" class="dropdown-item">Logout 2</a>
+                                                <a href="auth-confirm-mail-2.html" class="dropdown-item">Confirm Mail 2</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-error"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Errors <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-error">
+                                                <a href="pages-404.html" class="dropdown-item">Error 404</a>
+                                                <a href="pages-404-two.html" class="dropdown-item">Error 404 Two</a>
+                                                <a href="pages-404-alt.html" class="dropdown-item">Error 404-alt</a>
+                                                <a href="pages-500.html" class="dropdown-item">Error 500</a>
+                                                <a href="pages-500-two.html" class="dropdown-item">Error 500 Two</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-utility"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Utility <div class="arrow-down"></div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="topnav-utility">
+                                                <a href="pages-starter.html" class="dropdown-item">Starter</a>
+                                                <a href="pages-timeline.html" class="dropdown-item">Timeline</a>
+                                                <a href="pages-sitemap.html" class="dropdown-item">Sitemap</a>
+                                                <a href="pages-invoice.html" class="dropdown-item">Invoice</a>
+                                                <a href="pages-faqs.html" class="dropdown-item">FAQs</a>
+                                                <a href="pages-search-results.html" class="dropdown-item">Search Results</a>
+                                                <a href="pages-pricing.html" class="dropdown-item">Pricing</a>
+                                                <a href="pages-maintenance.html" class="dropdown-item">Maintenance</a>
+                                                <a href="pages-coming-soon.html" class="dropdown-item">Coming Soon</a>
+                                                <a href="pages-gallery.html" class="dropdown-item">Gallery</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-layout" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fe-sidebar mr-1"></i> Layouts <div class="arrow-down"></div>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="topnav-layout">
+                                        <a href="layouts-vertical.html" class="dropdown-item">Vertical</a>
+                                        <a href="layouts-detached.html" class="dropdown-item">Detached</a>
+                                        <a href="layouts-two-column.html" class="dropdown-item">Two Column Menu</a>
+                                        <a href="layouts-two-tone-icons.html" class="dropdown-item">Two Tones Icons</a>
+                                        <a href="layouts-preloader.html" class="dropdown-item">Preloader</a>
+                                    </div>
+                                </li>
+                            </ul> <!-- end navbar-->
+                        </div> <!-- end .collapsed-->
+                    </nav>
+                </div> <!-- end container-fluid -->
+            </div> <!-- end topnav-->
 
             <!-- ============================================================== -->
             <!-- Start Page Content here -->
             <!-- ============================================================== -->
 
-            <div class="content-page">
+            <div id="multistep-register"class="content-page">
                 <div class="content">
 
                     <!-- Start Content-->
-                    <div class="container-fluid">
+                    <div class="container-fluid pt-3">
                         
-                        <!-- start page title -->
                         <div class="row">
-                            <div class="col-12">
-                                <div class="page-title-box">
-                                    <div class="page-title-right">
-                                        <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">UBold</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Pages</a></li>
-                                            <li class="breadcrumb-item active">Starter</li>
-                                        </ol>
-                                    </div>
-                                    <h4 class="page-title">Starter</h4>
-                                </div>
-                            </div>
-                        </div>     
-                        <!-- end page title --> 
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-body">
+
+                                        <h4 class="header-title mb-3">Register</h4>
+
+                                        <form>
+                                            <div id="progressbarwizard">
+
+                                                <ul class="nav nav-pills bg-light nav-justified form-wizard-header mb-2">
+                                                    <li class="nav-item">
+                                                        <a href="#tab-1" data-toggle="tab" class="h-100 nav-link rounded-0 pt-2 pb-2">
+                                                            <div class="step mb-1">1</div>
+                                                            <span class="d-sm-inline">Wajib Pajak</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#tab-2" data-toggle="tab" class="h-100 nav-link rounded-0 pt-2 pb-2">
+                                                            <div class="step mb-1">2</div>
+                                                            <span class="d-sm-inline">Objek Pajak</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#tab-3" data-toggle="tab" class="h-100 nav-link rounded-0 pt-2 pb-2">
+                                                            <div class="step mb-1">3</div>
+                                                            <span class="d-sm-inline">Pemilik / Pengelola & Perizinan</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#tab-4" data-toggle="tab" class="h-100 nav-link rounded-0 pt-2 pb-2">
+                                                            <div class="step mb-1">4</div>
+                                                            <span class="d-sm-inline">Persyaratan</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#tab-5" data-toggle="tab" class="h-100 nav-link rounded-0 pt-2 pb-2">
+                                                            <div class="step mb-1">5</div>
+                                                            <span class="d-sm-inline">Pernyataan</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div id="bar" class="progress mb-3" style="height: 13px;">
+                                                    <div class="bar progress-bar progress-bar-striped progress-bar-animated"></div>
+                                                </div>
+
+                                                <div class="row justify-content-center">
+                                                    <div class="col-md-8">
+                                                        <div class="tab-content b-0 mb-0 pt-0">
+
+                                                            <div class="tab-pane" id="tab-1">
+                                                        
+                                                                <h1 class="mb-3">Wajib Pajak </h1> 
+        
+                                                                <div class="row justify-content-center">
+                                                                    
+                                                                    <div class="form-group col-md-5 mb-2">
+                                                                        <label for="jenis-pajak">Jenis Pajak</label>
+                                                                        <select class="form-control" id="jenis-pajak">
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                            <option>4</option>
+                                                                            <option>5</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group col-md-5 mb-2">
+                                                                        <label for="nama-wajib-pajak">Nama Wajib Pajak</label>
+                                                                        <input type="text" id="nama-wajib-pajak" class="form-control">
+                                                                    </div>
+                                        
+                                                                    <div class="form-group col-md-5 mb-2">
+                                                                        <label for="nik">NIK</label>
+                                                                        <input type="text" id="nik" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group col-md-5 mb-2">
+                                                                        <label for="npwp">NPWP</label>
+                                                                        <input type="text" id="npwp" class="form-control">
+                                                                    </div>
+                                            
+                                                                    <div class="form-group col-md-6 mb-2">
+                                                                        <label for="Alamat">Alamat</label>
+                                                                        <input type="text" id="Alamat" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group col-md-2  mb-2">
+                                                                        <label for="rt">RT</label>
+                                                                        <input type="text" id="rt" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group col-md-2 mb-2">
+                                                                        <label for="rw">RW</label>
+                                                                        <input type="text" id="rw" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group col-md-4 mb-2">
+                                                                        <label for="provinsi">Provinsi</label>
+                                                                        <select class="form-control" id="provinsi">
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                            <option>4</option>
+                                                                            <option>5</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group col-md-2  mb-2">
+                                                                        <label for="kode-pos">Kode pos</label>
+                                                                        <input type="text" id="kode-pos" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group col-md-4 mb-2">
+                                                                        <label for="tanggal">Tanggal</label>
+                                                                        <input class="form-control" id="tanggal" type="date" name="tanggal">
+                                                                    </div> 
+                                        
+                                        
+                                                                    <div class="form-group col-md-5 mb-2">
+                                                                        <label for="email">Email</label>
+                                                                        <input type="email" id="email" name="email" class="form-control" placeholder="">
+                                                                    </div>
+                                                                    <div class="form-group col-md-5 mb-2">
+                                                                        <label for="telepon">Telepon</label>
+                                                                        <input type="text" id="telepon" class="form-control">
+                                                                    </div>
+                                        
+                                                                </div>
+                                                               
+                                                            </div>
+        
+                                                            <div class="tab-pane" id="tab-2">
+                                                                <h1 class="mb-3">Objek Pajak </h1>
+                                                                <div class="row justify-content-center">
+                                                                    <div class="form-group col-md-5 mb-2">
+                                                                        <label for="jenis-pajak-objek">Jenis Pajak</label>
+                                                                        <select class="form-control" id="jenis-pajak-objek">
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                            <option>4</option>
+                                                                            <option>5</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group col-md-5 mb-2">
+                                                                        <label for="objek-pajak">Objek Pajak</label>
+                                                                        <select class="form-control" id="objek-pajak">
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                            <option>4</option>
+                                                                            <option>5</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group col-md-5 mb-2">
+                                                                        <label for="nama-usaha">Nama Usaha</label>
+                                                                        <input type="text" id="nama-usaha" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group col-md-5 mb-2">
+                                                                        <label for="status-usaha">Status Usaha</label>
+                                                                        <select class="form-control" id="status-usaha">
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                            <option>4</option>
+                                                                            <option>5</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group col-md-6 mb-2">
+                                                                        <label for="alamat">Alamat</label>
+                                                                        <input type="text" id="alamat" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group col-md-2  mb-2">
+                                                                        <label for="rt-usaha">RT</label>
+                                                                        <input type="text" id="rt-usaha" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group col-md-2 mb-2">
+                                                                        <label for="rw-usaha">RW</label>
+                                                                        <input type="text" id="rw-usaha" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group col-md-5 mb-2">
+                                                                        <label for="kecamatan">Kecamatan</label>
+                                                                        <select class="form-control" id="kecamatan">
+                                                                            <option>1</option>
+                                                                            <option>2</option>
+                                                                            <option>3</option>
+                                                                            <option>4</option>
+                                                                            <option>5</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group col-md-5 mb-2">
+                                                                        <label for="coordinate">Coordinate Lat/Lang</label>
+                                                                        <input type="text" id="coordinate" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group col-md-10 mb-2">
+                                                                        <label for="keterangan">Keterangan</label>
+                                                                        <textarea class="form-control" id="keterangan" rows="3"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+        
+                                                            <div class="tab-pane" id="tab-3">
+                                                                <div class="row justify-content-center">
+                                                                    <div class="col-md-10">
+                                                                        <h1 class="mb-3 text-left">Pemilik</h1>
+                                                                    </div>
+                                                                    <div class="form-group col-md-5 mb-3">
+                                                                        <label for="pemilik-nama-lengkap">Nama Lengkap</label>
+                                                                        <input type="text" id="pemilik-nama-lengkap" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group col-md-5 mb-3">
+                                                                        <label for="pemilik-nik">NIK</label>
+                                                                        <input type="text" id="pemilik-nik" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group col-md-6 mb-3">
+                                                                        <label for="pemilik-alamat">Alamat</label>
+                                                                        <input type="text" id="pemilik-alamat" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group col-md-4 mb-3">
+                                                                        <label for="pemilik-kode-pos">Kode Pos</label>
+                                                                        <input type="text" id="pemilik-kode-pos" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group col-md-5 mb-3">
+                                                                        <label for="pemilik-telepon">Telepon</label>
+                                                                        <input type="text" id="pemilik-telepon" class="form-control">
+                                                                    </div>
+                                        
+                                                                    <div class="form-group col-md-5 mb-3">
+                                                                        <label for="pemilik-jabatan">Jabatan</label>
+                                                                        <input type="text" id="pemilik-jabatan" class="form-control">
+                                                                    </div>
+                                            
+                                                                    <div class="col-md-10">
+                                                                        <h1 class="mb-3 mt-4 text-left">pengelola</h1>
+                                                                    </div>
+                                                                    <div class="form-group col-md-5 mb-3">
+                                                                        <label for="pengelola-nama-lengkap">Nama Lengkap</label>
+                                                                        <input type="text" id="pengelola-nama-lengkap" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group col-md-5 mb-3">
+                                                                        <label for="pengelola-nik">NIK</label>
+                                                                        <input type="text" id="pengelola-nik" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group col-md-5 mb-3">
+                                                                        <label for="pengelola-alamat">Alamat Lengkap</label>
+                                                                        <input type="text" id="pengelola-alamat" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group col-md-3 mb-3">
+                                                                        <label for="pengelola-telepon">Telepon</label>
+                                                                        <input type="text" id="pengelola-telepon" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group col-md-2 mb-3">
+                                                                        <label for="pengelola-kode-pos">Kode Pos</label>
+                                                                        <input type="text" id="pengelola-kode-pos" class="form-control">
+                                                                    </div>
+                                            
+                                                                    <div class="col-md-10">
+                                                                        <h1 class="mb-3 mt-4 text-left">Perizinan</h1>
+                                                                    </div>
+                                                                    <div class="form-group col-md-5 mb-3">
+                                                                        <label for="nama-perizinan">Nama Perizinan</label>
+                                                                        <input type="text" id="nama-perizinan" class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group col-md-5  mb-3">
+                                                                        <label for="tanggal-perizinan">Tanggal</label>
+                                                                        <input class="form-control" id="tanggal-perizinan" type="date" name="tanggal Perizinan">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="tab-pane" id="tab-4">
+                                                                <h1 class="mb-3 text-center">Persyaratan</h1>
+                                                                <div class="row justify-content-center">
+                                                                    <div class="col-md-10">
+                                                                        <p>Untuk memproses permohonan pendaftaran NPWP diperlukan persyaratan yang harus dilampirkan. Metode yang digunakan dalam mengirim lampiram permohonannya adalah :  </p>
+                                                                        <div class="upload-checkbox ml-3 mb-3">
+                                                                            <div class="checkbox checkbox-success checkbox-circle">
+                                                                                <input id="ugggah-ktp" type="checkbox">
+                                                                                <label for="ugggah-ktp">
+                                                                                    Unggah (Jenis file image atau pdf, ukuran file max 2MB/file)
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="checkbox checkbox-success checkbox-circle mb-2">
+                                                                                <input id="kirim-manual" type="checkbox">
+                                                                                <label for="kirim-manual">
+                                                                                    Kirim Manual
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-10">
+                                                                        <p>Saudara adalah Wajib Pajak Orang Pribadi bestatus PUSAT yang tidak melakuakan usaha/pekerjaan bebas dengan kategori OP. Silahkan upload syarat-syarat berikut! : </p>
+                                                                        <div class="row mt-3 mb-2">
+                                                                            <div class="col-md-3">
+                                                                                <h4>FC KTP/eKTP</h4> 
+                                                                            </div>
+                                                                            <div class="col-md-7">
+                                                                                <div class="form-group ">
+                                                                                    <input type="file" id="example-fileinput" class="form-control-file">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div> 
+                                                                    </div>
+                                        
+                                                                </div>
+                                                            </div>
+        
+                                                            <div class="tab-pane" id="tab-5">
+                                                                <h1 class="mb-3 text-center">Pernyataan</h1>
+                                                                <div class="row justify-content-center">
+                                                                    <div class="col-md-10">
+                                                                        <p>Dengan menyadari sepenuhnya akan segala akibat termasuk sanksi sesuai dengan ketentuan perundang-undangan yang berlaku. saya melakukan bahwa apa yang telah saya beritahukan di atas adalah : </p>
+                                                                        <div class="penyataan-checkbox ml-3 mb-3">
+                                                                            <div class="checkbox checkbox-success checkbox-circle ">
+                                                                                <input id="pernyataan-benar" type="checkbox">
+                                                                                <label for="pernyataan-benar">
+                                                                                    Benar
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="checkbox checkbox-success checkbox-circle mb-2">
+                                                                                <input id="penyataan-lengkap" type="checkbox">
+                                                                                <label for="penyataan-lengkap">
+                                                                                    Lengkap
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row justify-content-center mt-2">
+                                                                <ul class="list-inline mb-0  wizard">
+                                                                    <li class="previous list-inline-item">
+                                                                        <button type="button" id="prevBtn">sebelumnya</button>
+                                                                    </li>
+                                                                    <li class=" next list-inline-item float-right">
+                                                                        <button type="button" id="nextBtn">selanjutnya</button>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div><!-- tab-content -->
+                                                    </div>
+                                                    
+                                                </div> 
+                                            
+                                            </div> <!-- end #progressbarwizard-->
+                                        </form>
+
+                                    </div> <!-- end card-body -->
+                                </div> <!-- end card-->
+                            </div> <!-- end col -->
+
+            
+                        </div> 
+                        <!-- end row -->
                         
                     </div> <!-- container -->
 
@@ -1675,7 +1590,7 @@
                             </div>
 
                             <!-- Menu positions -->
-                            <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Menus (Leftsidebar and Topbar) Positon</h6>
+                            <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Layout Positon</h6>
 
                             <div class="custom-control custom-switch mb-1">
                                 <input type="radio" class="custom-control-input" name="menus-position" value="fixed" id="fixed-check"
@@ -1688,59 +1603,6 @@
                                     id="scrollable-check" />
                                 <label class="custom-control-label" for="scrollable-check">Scrollable</label>
                             </div>
-
-                            <!-- Left Sidebar-->
-                            <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Left Sidebar Color</h6>
-
-                            <div class="custom-control custom-switch mb-1">
-                                <input type="radio" class="custom-control-input" name="leftsidebar-color" value="light" id="light-check" checked />
-                                <label class="custom-control-label" for="light-check">Light</label>
-                            </div>
-
-                            <div class="custom-control custom-switch mb-1">
-                                <input type="radio" class="custom-control-input" name="leftsidebar-color" value="dark" id="dark-check" />
-                                <label class="custom-control-label" for="dark-check">Dark</label>
-                            </div>
-
-                            <div class="custom-control custom-switch mb-1">
-                                <input type="radio" class="custom-control-input" name="leftsidebar-color" value="brand" id="brand-check" />
-                                <label class="custom-control-label" for="brand-check">Brand</label>
-                            </div>
-
-                            <div class="custom-control custom-switch mb-3">
-                                <input type="radio" class="custom-control-input" name="leftsidebar-color" value="gradient" id="gradient-check" />
-                                <label class="custom-control-label" for="gradient-check">Gradient</label>
-                            </div>
-
-                            <!-- size -->
-                            <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Left Sidebar Size</h6>
-
-                            <div class="custom-control custom-switch mb-1">
-                                <input type="radio" class="custom-control-input" name="leftsidebar-size" value="default"
-                                    id="default-size-check" checked />
-                                <label class="custom-control-label" for="default-size-check">Default</label>
-                            </div>
-
-                            <div class="custom-control custom-switch mb-1">
-                                <input type="radio" class="custom-control-input" name="leftsidebar-size" value="condensed"
-                                    id="condensed-check" />
-                                <label class="custom-control-label" for="condensed-check">Condensed <small>(Extra Small size)</small></label>
-                            </div>
-
-                            <div class="custom-control custom-switch mb-1">
-                                <input type="radio" class="custom-control-input" name="leftsidebar-size" value="compact"
-                                    id="compact-check" />
-                                <label class="custom-control-label" for="compact-check">Compact <small>(Small size)</small></label>
-                            </div>
-
-                            <!-- User info -->
-                            <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Sidebar User Info</h6>
-
-                            <div class="custom-control custom-switch mb-1">
-                                <input type="checkbox" class="custom-control-input" name="leftsidebar-user" value="fixed" id="sidebaruser-check" />
-                                <label class="custom-control-label" for="sidebaruser-check">Enable</label>
-                            </div>
-
 
                             <!-- Topbar -->
                             <h6 class="font-weight-medium font-14 mt-4 mb-2 pb-1">Topbar</h6>
@@ -1777,8 +1639,16 @@
         <!-- Vendor js -->
         <script src="../assets/js/vendor.min.js"></script>
 
+        <!-- Plugins js-->
+        <script src="../assets/libs/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+        
+
+        <!-- Init js-->
+        <script src="../assets/js/pages/form-wizard.init.js"></script>
+
         <!-- App js -->
         <script src="../assets/js/app.min.js"></script>
+        <script src="../assets/js/main.js"></script>
         
     </body>
 </html>
