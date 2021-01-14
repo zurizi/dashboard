@@ -259,6 +259,13 @@ border: 2px #077A46 solid;
   
 /* end login */
 
+
+
+.topnav,
+.navbar-custom{
+  z-index:99990;
+}
+
 #multistep-register .card{
   border: none!important;
   border-radius: 15px!important;
@@ -411,5 +418,4 @@ border: 2px #077A46 solid;
   box-shadow: 0 0 0 2px white, 0 0 0 3px  #0072c9;
 }
   
-
 
