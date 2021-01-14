@@ -260,8 +260,11 @@ border: 2px #077A46 solid;
 /* end login */
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+#multistep-register .card{
+  border: none!important;
+  border-radius: 15px!important;
+}
 #multistep-register .header-title{
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -271,24 +274,34 @@ border: 2px #077A46 solid;
 }
 
 #multistep-register .form-wizard-header{
-  font-family: Poppins;
+  font-family: "Montserrat";
   font-weight: 700;
 }
 
 #multistep-register .step{
-  height: 45px;
-  width: 45px;
-  border: none;
+  height: 24px;
+  width: 24px;
   background-color: #0072c9;
-  color:  #fff ;
-  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
-  line-height: 1.9;
-  font-size: 24px;
-  font-weight: 700;
+  margin-right: 7px;
+  font-size: .8rem;
   opacity: 1;
   transition: 0.5s;
-  margin: auto;
+
+}
+#multistep-register .step-text{
+  padding: 0;
+  font-size: .75rem;
+}
+#multistep-register .nav-link {
+  display: block;
+  padding: .5rem .5rem;
+  justify-content: center;
+  align-items: baseline;
 }
 #multistep-register .nav-link.active .step{
   background-color: #fff;
@@ -298,13 +311,11 @@ border: 2px #077A46 solid;
 #multistep-register .nav-link.active{
   transition: 0.5s;
 }
-#multistep-register .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   color: #fff;
   background-color: #0072c9;
 }
-#multistep-register .nav-link span{
-  font-weight: 500;
-}
+
 #multistep-register .progress-bar{
   background-color:  #0072c9;
   transition: 1s;
@@ -312,36 +323,48 @@ border: 2px #077A46 solid;
 
 #multistep-register .tab-pane h1{
   text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: bold;
   text-align: center;  
-  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 1.4rem;
 }
-#multistep-register .tab-content>.tab-pane {
-  transition: 1s;
+#multistep-register .row-group{
+  border-top: 1px solid rgba(0,0,0,.1);
+  margin-left: 0!important;
+  margin-right: 0!important;
 }
-#multistep-register input,
-#multistep-register select {
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 0px;
-  margin-bottom: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  font-family: Montserrat;
-  color: #444;
-  font-size: 13px !important;
+
+#multistep-register .form-group{
+  justify-content: flex-start;
+  align-items: center;
+  padding: 7px 0;
 }
-#multistep-register input.invalid {
-  background-color: #ffdddd;
+
+#multistep-register .form-group {
+  margin-bottom: 0;
 }
-#multistep-register input:focus{
-  -moz-box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-  border: 1.5px solid #0072c9;
-  outline-width: 0;
-  transition: All 0.4s ease-in;
+#multistep-register label{
+  font-size: .75rem;
+  color:#535353;
+  font-weight: 700;
+}
+#multistep-register .form-control:focus{
+  border-color: transparent!important;
+  box-shadow: 0 0 0 0.1rem rgba(0, 114, 201,.25) !important;
+  -webkit-box-shadow: 0 0 0 0.1rem rgba(0, 114, 201, .25)!important;
+  outline: 0;
+  transition: All 0.2s ease-in;
+  color: #495057;
+  background-color: #fff;
+}
+#multistep-register .form-control{
+  border: 1px solid rgba(0,0,0,.105);
+  padding: 10px 15px!important;
+  border-radius: 5px;
+  font-size: .825rem!important;
+}
+#multistep-register .dropify-wrapper .dropify-message p {
+  margin: 5px 0 0;
+  display: none;
 }
 
 #multistep-register button {
@@ -350,7 +373,7 @@ border: 2px #077A46 solid;
   border: none;
   padding: 10px 18px;
   font-size: 14px;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   cursor: pointer;
   margin: 5px 10px;
   border-radius: 25px;

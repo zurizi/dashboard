@@ -10,6 +10,10 @@
         <!-- App favicon -->
         <link rel="shortcut icon" href="../assets/images/favicon.ico">
 
+        <!-- Plugins css -->
+        <link href="../assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/libs/dropify/css/dropify.min.css" rel="stylesheet" type="text/css" />
+
 		<!-- App css -->
 		<link href="../assets/css/bootstrap-creative.min.css" rel="stylesheet" type="text/css" id="bs-default-stylesheet" />
 		<link href="../assets/css/app-creative.min.css" rel="stylesheet" type="text/css" id="app-default-stylesheet" />
@@ -902,350 +906,458 @@
             <!-- Start Page Content here -->
             <!-- ============================================================== -->
 
-            <div id="multistep-register"class="content-page">
+            <div id="multistep-register" class="content-page">
                 <div class="content">
 
                     <!-- Start Content-->
                     <div class="container-fluid pt-3">
                         
-                        <div class="row">
-                            <div class="col-md-12">
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
                                 <div class="card">
                                     <div class="card-body">
 
-                                        <h4 class="header-title mb-3">Register</h4>
+                                        <h4 class="header-title mb-3">pendaftaran</h4>
 
                                         <form>
                                             <div id="progressbarwizard">
 
                                                 <ul class="nav nav-pills bg-light nav-justified form-wizard-header mb-2">
                                                     <li class="nav-item">
-                                                        <a href="#tab-1" data-toggle="tab" class="h-100 nav-link rounded-0 pt-2 pb-2">
-                                                            <div class="step mb-1">1</div>
-                                                            <span class="d-sm-inline">Wajib Pajak</span>
+                                                        <a href="#tab-1" data-toggle="tab" class="h-100 d-flex nav-link rounded-0 pt-2 ">
+                                                            <span class="step mb-1">1</span>
+                                                            <span class="d-sm-inline step-text">Wajib Pajak</span>
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a href="#tab-2" data-toggle="tab" class="h-100 nav-link rounded-0 pt-2 pb-2">
-                                                            <div class="step mb-1">2</div>
-                                                            <span class="d-sm-inline">Objek Pajak</span>
+                                                        <a href="#tab-2" data-toggle="tab" class="h-100 d-flex nav-link rounded-0 pt-2 ">
+                                                            <span class="step mb-1">2</span>
+                                                            <span class="d-sm-inline step-text">Objek Pajak</span>
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a href="#tab-3" data-toggle="tab" class="h-100 nav-link rounded-0 pt-2 pb-2">
-                                                            <div class="step mb-1">3</div>
-                                                            <span class="d-sm-inline">Pemilik / Pengelola & Perizinan</span>
+                                                        <a href="#tab-3" data-toggle="tab" class="h-100 d-flex nav-link rounded-0 pt-2 ">
+                                                            <span class="step mb-1">3</span>
+                                                            <span class="d-sm-inline step-text">Pemilik / Pengelola</span>
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a href="#tab-4" data-toggle="tab" class="h-100 nav-link rounded-0 pt-2 pb-2">
-                                                            <div class="step mb-1">4</div>
-                                                            <span class="d-sm-inline">Persyaratan</span>
+                                                        <a href="#tab-4" data-toggle="tab" class="h-100 d-flex nav-link rounded-0 pt-2 ">
+                                                            <span class="step mb-1">4</span>
+                                                            <span class="d-sm-inline step-text">Perizinan</span>
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a href="#tab-5" data-toggle="tab" class="h-100 nav-link rounded-0 pt-2 pb-2">
-                                                            <div class="step mb-1">5</div>
-                                                            <span class="d-sm-inline">Pernyataan</span>
+                                                        <a href="#tab-5" data-toggle="tab" class="h-100 d-flex nav-link rounded-0 pt-2 ">
+                                                            <span class="step mb-1">5</span>
+                                                            <span class="d-sm-inline step-text">Persyaratan</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="#tab-6" data-toggle="tab" class="h-100 d-flex nav-link rounded-0 pt-2 ">
+                                                            <span class="step mb-1">6</span>
+                                                            <span class="d-sm-inline step-text">Pernyataan</span>
                                                         </a>
                                                     </li>
                                                 </ul>
                                                 <div id="bar" class="progress mb-3" style="height: 13px;">
                                                     <div class="bar progress-bar progress-bar-striped progress-bar-animated"></div>
                                                 </div>
+                                                <div class="tab-content b-0 mb-0 pt-0">
+                                            
 
-                                                <div class="row justify-content-center">
-                                                    <div class="col-md-8">
-                                                        <div class="tab-content b-0 mb-0 pt-0">
-
-                                                            <div class="tab-pane" id="tab-1">
+                                            
+                                                    <div class="tab-pane" id="tab-1">
                                                         
-                                                                <h1 class="mb-3">Wajib Pajak </h1> 
-        
-                                                                <div class="row justify-content-center">
-                                                                    
-                                                                    <div class="form-group col-md-5 mb-2">
-                                                                        <label for="jenis-pajak">Jenis Pajak</label>
-                                                                        <select class="form-control" id="jenis-pajak">
-                                                                            <option>1</option>
-                                                                            <option>2</option>
-                                                                            <option>3</option>
-                                                                            <option>4</option>
-                                                                            <option>5</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="form-group col-md-5 mb-2">
-                                                                        <label for="nama-wajib-pajak">Nama Wajib Pajak</label>
-                                                                        <input type="text" id="nama-wajib-pajak" class="form-control">
-                                                                    </div>
-                                        
-                                                                    <div class="form-group col-md-5 mb-2">
-                                                                        <label for="nik">NIK</label>
-                                                                        <input type="text" id="nik" class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group col-md-5 mb-2">
-                                                                        <label for="npwp">NPWP</label>
-                                                                        <input type="text" id="npwp" class="form-control">
-                                                                    </div>
-                                            
-                                                                    <div class="form-group col-md-6 mb-2">
-                                                                        <label for="Alamat">Alamat</label>
-                                                                        <input type="text" id="Alamat" class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group col-md-2  mb-2">
-                                                                        <label for="rt">RT</label>
-                                                                        <input type="text" id="rt" class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group col-md-2 mb-2">
-                                                                        <label for="rw">RW</label>
-                                                                        <input type="text" id="rw" class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group col-md-4 mb-2">
-                                                                        <label for="provinsi">Provinsi</label>
-                                                                        <select class="form-control" id="provinsi">
-                                                                            <option>1</option>
-                                                                            <option>2</option>
-                                                                            <option>3</option>
-                                                                            <option>4</option>
-                                                                            <option>5</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="form-group col-md-2  mb-2">
-                                                                        <label for="kode-pos">Kode pos</label>
-                                                                        <input type="text" id="kode-pos" class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group col-md-4 mb-2">
-                                                                        <label for="tanggal">Tanggal</label>
-                                                                        <input class="form-control" id="tanggal" type="date" name="tanggal">
-                                                                    </div> 
-                                        
-                                        
-                                                                    <div class="form-group col-md-5 mb-2">
-                                                                        <label for="email">Email</label>
-                                                                        <input type="email" id="email" name="email" class="form-control" placeholder="">
-                                                                    </div>
-                                                                    <div class="form-group col-md-5 mb-2">
-                                                                        <label for="telepon">Telepon</label>
-                                                                        <input type="text" id="telepon" class="form-control">
-                                                                    </div>
-                                        
-                                                                </div>
-                                                               
-                                                            </div>
-        
-                                                            <div class="tab-pane" id="tab-2">
-                                                                <h1 class="mb-3">Objek Pajak </h1>
-                                                                <div class="row justify-content-center">
-                                                                    <div class="form-group col-md-5 mb-2">
-                                                                        <label for="jenis-pajak-objek">Jenis Pajak</label>
-                                                                        <select class="form-control" id="jenis-pajak-objek">
-                                                                            <option>1</option>
-                                                                            <option>2</option>
-                                                                            <option>3</option>
-                                                                            <option>4</option>
-                                                                            <option>5</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="form-group col-md-5 mb-2">
-                                                                        <label for="objek-pajak">Objek Pajak</label>
-                                                                        <select class="form-control" id="objek-pajak">
-                                                                            <option>1</option>
-                                                                            <option>2</option>
-                                                                            <option>3</option>
-                                                                            <option>4</option>
-                                                                            <option>5</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="form-group col-md-5 mb-2">
-                                                                        <label for="nama-usaha">Nama Usaha</label>
-                                                                        <input type="text" id="nama-usaha" class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group col-md-5 mb-2">
-                                                                        <label for="status-usaha">Status Usaha</label>
-                                                                        <select class="form-control" id="status-usaha">
-                                                                            <option>1</option>
-                                                                            <option>2</option>
-                                                                            <option>3</option>
-                                                                            <option>4</option>
-                                                                            <option>5</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="form-group col-md-6 mb-2">
-                                                                        <label for="alamat">Alamat</label>
-                                                                        <input type="text" id="alamat" class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group col-md-2  mb-2">
-                                                                        <label for="rt-usaha">RT</label>
-                                                                        <input type="text" id="rt-usaha" class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group col-md-2 mb-2">
-                                                                        <label for="rw-usaha">RW</label>
-                                                                        <input type="text" id="rw-usaha" class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group col-md-5 mb-2">
-                                                                        <label for="kecamatan">Kecamatan</label>
-                                                                        <select class="form-control" id="kecamatan">
-                                                                            <option>1</option>
-                                                                            <option>2</option>
-                                                                            <option>3</option>
-                                                                            <option>4</option>
-                                                                            <option>5</option>
-                                                                        </select>
-                                                                    </div>
-                                                                    <div class="form-group col-md-5 mb-2">
-                                                                        <label for="coordinate">Coordinate Lat/Lang</label>
-                                                                        <input type="text" id="coordinate" class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group col-md-10 mb-2">
-                                                                        <label for="keterangan">Keterangan</label>
-                                                                        <textarea class="form-control" id="keterangan" rows="3"></textarea>
-                                                                    </div>
+                                                        <h1 class="mb-3">Wajib Pajak </h1> 
+
+                                                        <div class="row row-group">
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label class="col-md-4 pl-4" for="jenis-pajak">Jenis Pajak</label>
+                                                                <div class="col-md-8">
+                                                                    <select class="form-control" id="jenis-pajak">
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                        <option>5</option>
+                                                                    </select>
                                                                 </div>
                                                             </div>
-        
-                                                            <div class="tab-pane" id="tab-3">
-                                                                <div class="row justify-content-center">
-                                                                    <div class="col-md-10">
-                                                                        <h1 class="mb-3 text-left">Pemilik</h1>
+
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="nama-wajib-pajak">Nama Wajib Pajak</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="nama-wajib-pajak" class="form-control">
+                                                                </div>
+                                                            </div>
+                                
+                                                        </div>
+                                                        <div class="row row-group">
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="nik">NIK</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="nik" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="npwp">NPWP</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="npwp" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row row-group">
+                                                            <div class="form-group d-flex col-md-12">
+                                                                <label  class="col-md-2 pl-4" for="Alamat">Alamat</label>
+                                                                <div class="col-md-10">
+                                                                    <textarea class="form-control" id="alamat" rows="2"></textarea> 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row row-group">
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="rt">RT</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="rt" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="rw">RW</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="rw" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row row-group ">
+                                                            <div class="form-group d-flex col-md-6 ">
+                                                                <label  class="col-md-4 pl-4" for="kode-pos">Kode pos</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="kode-pos" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="provinsi">Provinsi</label>
+                                                                <div class="col-md-8">
+                                                                    <select class="form-control" id="provinsi">
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                        <option>5</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row row-group">
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="tanggal">Tanggal</label>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" id="tanggal" type="date" name="tanggal">
+                                                                </div>
+                                                            </div> 
+                                
+                                
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="email">Email</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="email" id="email" name="email" class="form-control" placeholder="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row-group">
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="telepon">Telepon</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="telepon" class="form-control">
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="tab-pane" id="tab-2">
+                                                        <h1 class="mb-3">Objek Pajak </h1>
+                                                        
+                                                        <div class="row row-group">
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label class="col-md-4 pl-4" for="objek-jenis-pajak">Jenis Pajak</label>
+                                                                <div class="col-md-8">
+                                                                    <select class="form-control" id="objek-jenis-pajak">
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                        <option>5</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label class="col-md-4 pl-4" for="objek-pajak">Objek Pajak</label>
+                                                                <div class="col-md-8">
+                                                                    <select class="form-control" id="objek-pajak">
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                        <option>5</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>                    
+                                                        </div>
+
+                                                        <div class="row row-group">
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="objek-nama-usaha">Nama Usaha</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="objek-nama-usaha" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label class="col-md-4 pl-4" for="objek-status-usaha">Status Usaha</label>
+                                                                <div class="col-md-8">
+                                                                    <select class="form-control" id="objek-status-usaha">
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                        <option>5</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>  
+                                                        </div>
+                                                        <div class="row row-group">
+                                                            <div class="form-group d-flex col-md-12">
+                                                                <label  class="col-md-2 pl-4" for="objek-alamat">Alamat</label>
+                                                                <div class="col-md-10">
+                                                                    <textarea class="form-control" id="objek-alamat" rows="2"></textarea> 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row row-group">
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="objek-rt">RT</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="objek-rt" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="objek-rw">RW</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="objek-rw" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row row-group ">
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="objek-kecamatan">Kecamatan</label>
+                                                                <div class="col-md-8">
+                                                                    <select class="form-control" id="objek-kecamatan">
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                        <option>5</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="objek-coordinate">Coordinate Lat/Lang</label>
+                                                                <div class="col-md-8">
+                                                                    <input class="form-control" id="objek-coordinate" type="text">
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+                                                    
+                                                        <div class="row-group">
+                                                            <div class="form-group d-flex col-md-12">
+                                                                <label  class="col-md-2 pl-4" for="objek-keterangan">Keteragan</label>
+                                                                <div class="col-md-10">
+                                                                    <textarea class="form-control" id="objek-alamat" rows="4"></textarea> 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-3">
+                                                        <h1 class="mb-3 text-left">PEMILIK</h1>
+                                                        <div class="row row-group">
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="pemilik-nama">Nama Lengkap</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="pemilik-nama" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="pemilik-nik">NIK</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="pemilik-nik" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row row-group">
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="pemilik-alamat">Alamat</label>
+                                                                <div class="col-md-8">
+                                                                    <textarea type="text" id="pemilik-alamat" rows="3" class="form-control"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="pemilik-kode-pos">Kode Pos</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="pemilik-kode-pos" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row row-group">
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="pemilik-telepon">Telepon</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="pemilik-telepon" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="pemilik-jabatan">Jabatan</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="pemilik-jabatan" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <h1 class="mb-3 mt-4 text-left">Pengelola</h1>
+                                                        <div class="row row-group">
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="pengelola-nama">Nama Lengkap</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="pengelola-nama" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="pengelola-jabatan">Jabatan</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="pengelola-jabatan" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row row-group">
+                                                            <div class="form-group d-flex col-md-12">
+                                                                <label  class="col-md-2 pl-4" for="pengelola-alamat">Alamat Lengkap</label>
+                                                                <div class="col-md-10">
+                                                                    <textarea class="form-control" id="pengelola-alamat" rows="2"></textarea> 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row row-group">
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="pengelola-telepon">Telepon</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="pengelola-telepon" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="pengelola-kode-pos">Kode Pos</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="pengelola-kode-pos" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        
+                                                    </div>
+
+                                                    <div class="tab-pane" id="tab-4">
+                                                        <h1 class="mb-3 mt-4 text-left">PERIZINAN</h1>
+                                                        <div class="row row-group">
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="perizinan-nama">Nama Perizinan</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="perizinan-nama" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group d-flex col-md-6">
+                                                                <label  class="col-md-4 pl-4" for="perizinan-tanggal">Tanggal</label>
+                                                                <div class="col-md-8">
+                                                                    <input type="text" id="perizinan-tanggal" class="form-control">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-5">
+                                                        <h1 class="mb-3 text-center">Persyaratan</h1>
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-md-10">
+                                                                <p>Untuk memproses permohonan pendaftaran NPWP diperlukan persyaratan yang harus dilampirkan. Metode yang digunakan dalam mengirim lampiram permohonannya adalah :  </p>
+                                                                <div class="upload-checkbox ml-3 mb-3">
+                                                                    <div class="checkbox checkbox-primary checkbox-circle mb-2">
+                                                                        <input id="ugggah-ktp" type="checkbox">
+                                                                        <label for="ugggah-ktp">
+                                                                            Unggah (Jenis file image atau pdf, ukuran file max 2MB/file)
+                                                                        </label>
                                                                     </div>
-                                                                    <div class="form-group col-md-5 mb-3">
-                                                                        <label for="pemilik-nama-lengkap">Nama Lengkap</label>
-                                                                        <input type="text" id="pemilik-nama-lengkap" class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group col-md-5 mb-3">
-                                                                        <label for="pemilik-nik">NIK</label>
-                                                                        <input type="text" id="pemilik-nik" class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group col-md-6 mb-3">
-                                                                        <label for="pemilik-alamat">Alamat</label>
-                                                                        <input type="text" id="pemilik-alamat" class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group col-md-4 mb-3">
-                                                                        <label for="pemilik-kode-pos">Kode Pos</label>
-                                                                        <input type="text" id="pemilik-kode-pos" class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group col-md-5 mb-3">
-                                                                        <label for="pemilik-telepon">Telepon</label>
-                                                                        <input type="text" id="pemilik-telepon" class="form-control">
-                                                                    </div>
-                                        
-                                                                    <div class="form-group col-md-5 mb-3">
-                                                                        <label for="pemilik-jabatan">Jabatan</label>
-                                                                        <input type="text" id="pemilik-jabatan" class="form-control">
-                                                                    </div>
-                                            
-                                                                    <div class="col-md-10">
-                                                                        <h1 class="mb-3 mt-4 text-left">pengelola</h1>
-                                                                    </div>
-                                                                    <div class="form-group col-md-5 mb-3">
-                                                                        <label for="pengelola-nama-lengkap">Nama Lengkap</label>
-                                                                        <input type="text" id="pengelola-nama-lengkap" class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group col-md-5 mb-3">
-                                                                        <label for="pengelola-nik">NIK</label>
-                                                                        <input type="text" id="pengelola-nik" class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group col-md-5 mb-3">
-                                                                        <label for="pengelola-alamat">Alamat Lengkap</label>
-                                                                        <input type="text" id="pengelola-alamat" class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group col-md-3 mb-3">
-                                                                        <label for="pengelola-telepon">Telepon</label>
-                                                                        <input type="text" id="pengelola-telepon" class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group col-md-2 mb-3">
-                                                                        <label for="pengelola-kode-pos">Kode Pos</label>
-                                                                        <input type="text" id="pengelola-kode-pos" class="form-control">
-                                                                    </div>
-                                            
-                                                                    <div class="col-md-10">
-                                                                        <h1 class="mb-3 mt-4 text-left">Perizinan</h1>
-                                                                    </div>
-                                                                    <div class="form-group col-md-5 mb-3">
-                                                                        <label for="nama-perizinan">Nama Perizinan</label>
-                                                                        <input type="text" id="nama-perizinan" class="form-control">
-                                                                    </div>
-                                                                    <div class="form-group col-md-5  mb-3">
-                                                                        <label for="tanggal-perizinan">Tanggal</label>
-                                                                        <input class="form-control" id="tanggal-perizinan" type="date" name="tanggal Perizinan">
+                                                                    <div class="checkbox checkbox-primary checkbox-circle mb-2">
+                                                                        <input id="kirim-manual" type="checkbox">
+                                                                        <label for="kirim-manual">
+                                                                            Kirim Manual
+                                                                        </label>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            
-                                                            <div class="tab-pane" id="tab-4">
-                                                                <h1 class="mb-3 text-center">Persyaratan</h1>
-                                                                <div class="row justify-content-center">
-                                                                    <div class="col-md-10">
-                                                                        <p>Untuk memproses permohonan pendaftaran NPWP diperlukan persyaratan yang harus dilampirkan. Metode yang digunakan dalam mengirim lampiram permohonannya adalah :  </p>
-                                                                        <div class="upload-checkbox ml-3 mb-3">
-                                                                            <div class="checkbox checkbox-success checkbox-circle">
-                                                                                <input id="ugggah-ktp" type="checkbox">
-                                                                                <label for="ugggah-ktp">
-                                                                                    Unggah (Jenis file image atau pdf, ukuran file max 2MB/file)
-                                                                                </label>
-                                                                            </div>
-                                                                            <div class="checkbox checkbox-success checkbox-circle mb-2">
-                                                                                <input id="kirim-manual" type="checkbox">
-                                                                                <label for="kirim-manual">
-                                                                                    Kirim Manual
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
+                                                            <div class="col-md-10">
+                                                                <p>Saudara adalah Wajib Pajak Orang Pribadi bestatus PUSAT yang tidak melakuakan usaha/pekerjaan bebas dengan kategori OP. Silahkan upload syarat-syarat berikut! : </p>
+                                                                <div class="row mt-3 mb-2">
+                                                                    <div class="col-md-3">
+                                                                        <h4>FC KTP/eKTP</h4> 
                                                                     </div>
-                                                                    <div class="col-md-10">
-                                                                        <p>Saudara adalah Wajib Pajak Orang Pribadi bestatus PUSAT yang tidak melakuakan usaha/pekerjaan bebas dengan kategori OP. Silahkan upload syarat-syarat berikut! : </p>
-                                                                        <div class="row mt-3 mb-2">
-                                                                            <div class="col-md-3">
-                                                                                <h4>FC KTP/eKTP</h4> 
-                                                                            </div>
-                                                                            <div class="col-md-7">
-                                                                                <div class="form-group ">
-                                                                                    <input type="file" id="example-fileinput" class="form-control-file">
-                                                                                </div>
-                                                                            </div>
-                                                                        </div> 
+                                                                    <div class="col-md-5">
+                                                                        <h5>Upload Disini</h5>
+                                                                        <input type="file" data-plugins="dropify" data-height="150" />
                                                                     </div>
-                                        
-                                                                </div>
+                                                                </div> 
                                                             </div>
-        
-                                                            <div class="tab-pane" id="tab-5">
-                                                                <h1 class="mb-3 text-center">Pernyataan</h1>
-                                                                <div class="row justify-content-center">
-                                                                    <div class="col-md-10">
-                                                                        <p>Dengan menyadari sepenuhnya akan segala akibat termasuk sanksi sesuai dengan ketentuan perundang-undangan yang berlaku. saya melakukan bahwa apa yang telah saya beritahukan di atas adalah : </p>
-                                                                        <div class="penyataan-checkbox ml-3 mb-3">
-                                                                            <div class="checkbox checkbox-success checkbox-circle ">
-                                                                                <input id="pernyataan-benar" type="checkbox">
-                                                                                <label for="pernyataan-benar">
-                                                                                    Benar
-                                                                                </label>
-                                                                            </div>
-                                                                            <div class="checkbox checkbox-success checkbox-circle mb-2">
-                                                                                <input id="penyataan-lengkap" type="checkbox">
-                                                                                <label for="penyataan-lengkap">
-                                                                                    Lengkap
-                                                                                </label>
-                                                                            </div>
-                                                                        </div>
+                                
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tab-pane" id="tab-6">
+                                                        <h1 class="mb-3 text-center">Pernyataan</h1>
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-md-10">
+                                                                <p>Dengan menyadari sepenuhnya akan segala akibat termasuk sanksi sesuai dengan ketentuan perundang-undangan yang berlaku. saya melakukan bahwa apa yang telah saya beritahukan di atas adalah : </p>
+                                                                <div class="penyataan-checkbox ml-3 mb-3">
+                                                                    <div class="checkbox checkbox-primary checkbox-circle mb-2 ">
+                                                                        <input id="pernyataan-benar" type="checkbox">
+                                                                        <label for="pernyataan-benar">
+                                                                            Benar
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="checkbox checkbox-primary checkbox-circle mb-2">
+                                                                        <input id="penyataan-lengkap" type="checkbox">
+                                                                        <label for="penyataan-lengkap">
+                                                                            Lengkap
+                                                                        </label>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="row justify-content-center mt-2">
-                                                                <ul class="list-inline mb-0  wizard">
-                                                                    <li class="previous list-inline-item">
-                                                                        <button type="button" id="prevBtn">sebelumnya</button>
-                                                                    </li>
-                                                                    <li class=" next list-inline-item float-right">
-                                                                        <button type="button" id="nextBtn">selanjutnya</button>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div><!-- tab-content -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="row justify-content-center mt-2">
+                                                        <ul class="list-inline mb-0  wizard">
+                                                            <li class="previous list-inline-item">
+                                                                <button type="button" id="prevBtn">sebelumnya</button>
+                                                            </li>
+                                                            <li class="next list-inline-item float-right">
+                                                                <button type="button" id="nextBtn">selanjutnya</button>
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                     
-                                                </div> 
-                                            
+                                                    
+
+                                                </div> <!-- tab-content -->
                                             </div> <!-- end #progressbarwizard-->
                                         </form>
 
@@ -1642,13 +1754,17 @@
         <!-- Plugins js-->
         <script src="../assets/libs/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
         
-
+        <!-- Plugins js -->
+        <script src="../assets/libs/dropzone/min/dropzone.min.js"></script>
+        <script src="../assets/libs/dropify/js/dropify.min.js"></script>
+        
+        <!-- Init js-->
+        <script src="../assets/js/pages/form-fileuploads.init.js"></script>
         <!-- Init js-->
         <script src="../assets/js/pages/form-wizard.init.js"></script>
 
         <!-- App js -->
         <script src="../assets/js/app.min.js"></script>
-        <script src="../assets/js/main.js"></script>
         
     </body>
 </html>
