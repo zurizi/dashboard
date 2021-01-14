@@ -438,15 +438,19 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-.services .icon-box:hover .title , .services .icon-box:hover .description {
-  color: #fff;
+.services .icon-box:hover .title { 
+  color: #0072c9;
+}
+.services .icon-box:hover .description {
+  color:#fff;
 }
 
 .services .icon-box:hover .icon {
-  background: #fff;
+  background: #FFF;
+  border: 3px solid #0072c9;
 }
 .services .icon-box:hover i{
-  color: #FFCA19;
+  color: #0072c9;
 }
 
 /*--------------------------------------------------------------
