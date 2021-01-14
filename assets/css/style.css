@@ -302,7 +302,9 @@ border: 2px #077A46 solid;
   color: #fff;
   background-color: #0072c9;
 }
-
+#multistep-register .nav-link span{
+  font-weight: 500;
+}
 #multistep-register .progress-bar{
   background-color:  #0072c9;
   transition: 1s;
