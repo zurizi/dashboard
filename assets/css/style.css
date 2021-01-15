@@ -260,7 +260,6 @@ border: 2px #077A46 solid;
 /* end login */
 
 
-
 .topnav,
 .navbar-custom{
   z-index:99990;
@@ -419,3 +418,16 @@ border: 2px #077A46 solid;
 }
   
 
+@media (max-width: 1200px){
+  .step-chevron{
+    display: none;
+  }
+}
+
+@media (max-width: 685px){
+  .form-wizard-header{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+}
