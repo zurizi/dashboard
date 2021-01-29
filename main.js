@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function(e) {
             e.preventDefault()
             smoothScroll(target.getBoundingClientRect().top)
-            setTimeout(function() {location.hash = link.hash}, 600)
+            setTimeout(function() {location.hash = link.hash}, 0)
         })
     }
 
