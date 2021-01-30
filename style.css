@@ -348,6 +348,7 @@ p, .accordion-body{
     right:12px !important;
   }
 }
+
 /* carousel */
 #carousel{
   padding-top: 80px;
@@ -375,7 +376,7 @@ p, .accordion-body{
   overflow: hidden;
   background: #fff;
   box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
-  transition: all 0.4s ease-in-out;
+  transition: all .5s ease-in-out;
   border-radius: 8px;
   border: 3px solid  #0072c9;
   z-index: 1;
@@ -384,19 +385,32 @@ p, .accordion-body{
 .services .icon-box::before {
   content: '';
   position: absolute;
-  background: #FFCA19;
+  background: #0072c9ac;
   opacity:1 ;
   right: -60px;
   top: -40px;
   width: 100px;
   height: 100px;
   border-radius: 50px;
-  transition: all 0.4s;
+  transition: all .5s;
   z-index: -1;
 }
-
-.services .icon-box:hover::before {
-  background: #FFCA19;
+.services .icon-box:hover:before{
+  background: #0072c9;
+}
+.services .icon-box::after{
+  content: '';
+  position: absolute;
+  opacity:1; 
+  top:0;
+  left:0;
+  width: 0;
+  height: 100%;
+  transition: all .5s;
+  z-index: -2;
+}
+.services .icon-box:hover::after {
+  background: #0072c922;
   opacity: 1;
   right: 0;
   top: 0;
@@ -412,10 +426,10 @@ p, .accordion-body{
   text-align: center;
   border-radius: 50%;
   width: 60px;
-  border: 3px solid#FFCA19;
+  border: 3px solid #0072c9ac;
   height: 60px;
   background:  #0072c9;
-  transition: all 0.4s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .services .icon i {
@@ -442,7 +456,13 @@ p, .accordion-body{
   font-weight: 500;
 }
 
-.services .icon-box:hover .title { 
+.services .icon-box:hover{
+  transform: translateY(8px);
+}
+.services .icon-box:hover .description {
+  color:#0072c9;
+}
+/* .services .icon-box:hover .title { 
   color: #0072c9;
 }
 .services .icon-box:hover .description {
@@ -455,7 +475,7 @@ p, .accordion-body{
 }
 .services .icon-box:hover i{
   color: #0072c9;
-}
+} */
 
 /*--------------------------------------------------------------
 # about
